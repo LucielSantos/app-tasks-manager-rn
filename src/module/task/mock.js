@@ -1,6 +1,4 @@
-import { ListTask } from './type/task';
-
-export const tasks : ListTask = [
+export const tasks= [
   { _id: 'a1', nome: 'John', decricao: 'Test', status: 'feito'},
   { _id: 'b1', nome: 'John', decricao: 'Test', status: 'feito'},
   { _id: 'c1', nome: 'John', decricao: 'Test', status: 'feito'},

@@ -2,22 +2,20 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { Icon } from 'react-native-elements';
 
-export class MenuBottom extends Component<any, any> {
-  render() {
-    return (
-        <View style={styles.container}>
-          <TouchableOpacity>
-            <Icon name='menu' color="#aaa" />
-          </TouchableOpacity>
-          <TouchableOpacity onPress={this.props.newTask} style={styles.newTask} >
-            <Icon name='add' color='white' size={34} style={styles.iconButton}/>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Icon name='more-vert' color="#aaa" />
-          </TouchableOpacity>
-        </View>
-    )
-  }
+export const MenuBottom = ({newTask}) =>  {
+  return (
+      <View style={styles.container}>
+        <TouchableOpacity>
+          <Icon name='menu' color="#aaa" />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={newTask} style={styles.newTask} >
+          <Icon name='add' color='white' size={34} style={styles.iconButton}/>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Icon name='more-vert' color="#aaa" />
+        </TouchableOpacity>
+      </View>
+  )
 }
 
 const styles = StyleSheet.create({
